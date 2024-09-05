@@ -1,26 +1,787 @@
 <!DOCTYPE html>
-<html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+
+<!--- basic page needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+<!-- mobile specific metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/vendor.css">
+
+<!-- script
+  ================================================== -->
+  <script src="js/pace.min.js"></script>
+  <script src="js/plugins.js"></script>
+
+<!-- favicons
+  ================================================== -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
 </head>
-<body>
-    <nav>
-        <a href="index.html" class="active">MayDrew3</a>
-        <a href="myposts.html">Posts</a>
-        <a href="aboutme.html">About me</a>
-    </nav>
 
-    <main data-router-wrapper>
-        <section data-router-view="home">
-            <h1>Page 1 Content</h1>
-            <p>This is the content for Page 1.</p>
-        </section>
-    </main>
+<body id="top">
 
-    <script src="js/script.js"></script>
+<!-- header
+  ================================================== -->
+  <header>
+    <div class="row">
+
+     <div class="top-bar">
+      <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+      <div class="logo">
+        <a href="index.html">Home</a>
+      </div>
+
+      <nav id="main-nav-wrap">
+        <ul class="main-navigation">
+         <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+         <li><a class="smoothscroll"  href="#about" title="">About</a></li>
+         <li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+         <li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+       </ul>
+     </nav>
+   </div> <!-- /top-bar -->
+
+ </div> <!-- /row -->
+</header> <!-- /header -->
+
+<!-- intro section
+  ================================================== -->
+  <section id="intro">
+
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+     <div class="row">
+
+      <div class="col-twelve">
+
+       <h5>Hello, World.</h5>
+       <h1>I'm Xinyi(Ethel) Jiang.</h1>
+
+       <p class="intro-position">
+        <span>Financial Reporter</span>
+        <span>Video Storyteller </span>
+      </p>
+
+      <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+    </div>
+
+  </div>
+</div> <!-- /intro-content -->
+
+<ul class="intro-social">
+  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="#"><i class="fa fa-behance"></i></a></li>
+  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+</ul> <!-- /intro-social -->
+
+</section> <!-- /intro -->
+
+
+<!-- about section
+  ================================================== -->
+  <section id="about">
+
+    <div class="row section-intro">
+     <div class="col-twelve">
+
+      <h5>About</h5>
+      <h1>Let me introduce myself.</h1>
+
+      <div class="intro-info">
+
+       <img src="https://cdn-images-1.medium.com/max/1200/1*vBbKdI_YNQhXZNUDMZISXw.jpeg" alt="Profile Picture">
+
+       <p class="lead">Xinyi(Ethel) Jiang is a M&A reporter at Mergermarket, covering financial services and fintech sectors. She previously worked for Business Insider, The Wall Street Journal, and Morning Consult. She holds a master's degree in journalism from Northwestern University, with a focus on Business, Money and Markets. During her time as a freelancer, her work has appeared in MarketWatch, TheStreet and UPI.
+</p>
+     </div>
+
+   </div>
+ </div> <!-- /section-intro -->
+
+ <div class="row about-content">
+
+   <div class="col-six tab-full">
+
+    <h3>Profile</h3>
+    <p>Xinyi (Ethel) Jiang is a financial reporter and video storyteller.</p>
+
+    <ul class="info-list">
+     <li>
+      <strong>Fullname:</strong>
+      <span>Xinyi (Ethel) Jiang</span>
+    </li>
+    <li>
+      <strong>Birth Date:</strong>
+      <span>January 5, 1996</span>
+    </li>
+    <li>
+      <strong>Job:</strong>
+      <span> Financial Reporter</span>
+    </li>
+    <li>
+      <strong>Website:</strong>
+      <span><a href="https://www.businessinsider.com/author/ethel-jiang" target="_blank" title="Author page">https://www.businessinsider.com/author/ethel-jiang</a></span>
+    </li>
+    <li>
+      <strong>Email:</strong>
+      <span>xinyijiang2018@u.northwestern.edu</span>
+    </li>
+
+  </ul> <!-- /info-list -->
+
+</div>
+
+<div class="col-six tab-full">
+
+  <h3>Skills</h3>
+  <p>Xinyi (Ethel) Jiang is good at Newswriting, financial analysis, Storytelling, Video Producing, Adobe (Premiere, Photoshop, Illustrator, Audition), Programming (Python), and Website Design (HTML, CSS and JavaScript)</p>
+
+  <ul class="skill-bars">
+    <li>
+      <div class="progress percent95"><span>95%</span></div>
+      <strong>Storytelling</strong>
+    </li>
+    <li>
+      <div class="progress percent95"><span>95%</span></div>
+      <strong>Video Producing</strong>
+    </li>
+    <li>
+      <div class="progress percent95"><span>95%</span></div>
+      <strong>News Writing</strong>
+    </li>
+    <li>
+      <div class="progress percent95"><span>95%</span></div>
+      <strong>Adobe(Premiere,Photoshop)</strong>
+    </li>
+    <li>
+      <div class="progress percent85"><span>85%</span></div>
+      <strong>Website Design</strong>
+    </li>
+
+  </ul> <!-- /skill-bars -->
+
+</div>
+
+</div>
+
+<div class="row button-section">
+	<div class="col-twelve">
+		<a href="mailto:xinyijiang2018@u.northwestern.edu" target="_blank" title="Email Me" class="button stroke">Email Me</a>
+		<a href="https://www.linkedin.com/in/ethel-xinyi-jiang/" target="_blank" title="linkedin Profile" class="button button-primary">linkedin Profile</a>
+	</div>
+</div>
+
+</section> <!-- /process-->
+
+
+<!-- resume Section
+  ================================================== -->
+  <section id="resume" class="grey-section">
+
+   <div class="row section-intro">
+     <div class="col-twelve">
+
+      <h5>Resume</h5>
+      <h1>More of my credentials.</h1>
+
+      <p class="lead">Xinyi (Ethel) Jiang has passed CFA Level I and FRM Part I.  </p>
+
+    </div>
+  </div> <!-- /section-intro-->
+
+  <div class="row resume-timeline">
+
+   <div class="col-twelve resume-header">
+
+    <h2>Work Experience</h2>
+
+  </div> <!-- /resume-header -->
+
+  <div class="col-twelve">
+
+    <div class="timeline-wrap">
+
+     <div class="timeline-block">
+
+      <div class="timeline-ico">
+       <i class="fa fa-graduation-cap"></i>
+     </div>
+       
+       <div class="timeline-header">
+      <h3>M&A reporter</h3>
+      <p>April 2019 - now</p>
+    </div>
+
+    <div class="timeline-content">
+      <h4>Mergermarket, Acuris, Virginia</h4>
+      <p>Produces up to five articles per week covering private and public M&A deals in the financial services and fintech sector for the subscriber base of investment bankers, lawyers, and private equity sponsors. 
+      </p>
+         </div>
+       
+      </div> <!-- /timeline-block -->
+
+     <div class="timeline-block">
+
+    <div class="timeline-ico">
+     <i class="fa fa-graduation-cap"></i>
+
+    </div>
+       
+     <div class="timeline-header">
+      <h3>Markets Insider Fellow</h3>
+      <p>Auguest 2018 - March 2019</p>
+    </div>
+
+    <div class="timeline-content">
+      <h4>Business Insider, New York</h4>
+      <p>Wrote up to six posts a day covering the latest stock movements and fun facts of technology companies based on SEC filings, Wall Street’s sell-side notes and exclusive interviews. 
+      </p>
+         </div>
+
+  </div> <!-- /timeline-block -->
+
+     <div class="timeline-block">
+
+    <div class="timeline-ico">
+     <i class="fa fa-graduation-cap"></i>
+
+    </div>
+       <div class="timeline-header">
+        <h3>Newsroon Intern</h3>
+        <p>April 2018 - June 2018 </p>
+      </div>
+
+      <div class="timeline-content">
+        <h4>Morning Consult, Washington D.C.</h4>
+        <p> Analyzed Morning Consult polls and wrote data-driven stories to help leaders use public opinion to make important decisions.
+
+        </p>
+      </div>
+
+  </div> <!-- /timeline-block -->
+
+  <div class="timeline-block">
+
+    <div class="timeline-ico">
+     <i class="fa fa-graduation-cap"></i>
+   </div>
+
+   <div class="timeline-header">
+    <h3>Business Reporter </h3>
+    <p>April 2018 - June 2018 </p>
+  </div>
+
+  <div class="timeline-content">
+    <h4>Medill News Service, Washington D.C. </h4>
+    <p>Broke news and wrote enterprise stories on technology and international trade for Medill’s media partners including MarketWatch and TheStreet.</p>
+  </div>
+
+</div> <!-- /timeline-block -->
+
+<div class="timeline-block">
+
+  <div class="timeline-ico">
+   <i class="fa fa-graduation-cap"></i>
+ </div>
+
+ <div class="timeline-header">
+  <h3>Video Reporter</h3>
+  <p>November 2017 - March 2018</p>
+</div>
+
+<div class="timeline-content">
+  <h4>Medill Reports, Chicago</h4>
+  <p>Produced animated and human-centered video stories for online publication on topics including homeless people, vending machines, physical therapist for animals, local coffee shop, veteran-owned businesses, etc.</p>
+</div>
+
+<!-- <div class="timeline-content">
+  <h4>People’s Daily, Beijing</h4>
+  <p>Turned written reports into visual news, including infographics, interactive charts, and HTML5 pages
+  </p>
+</div>
+</div> -->
+
+<div class="timeline-block">
+  <div class="timeline-ico">
+    <i class="fa fa-graduation-cap"></i>
+  </div>
+
+  <div class="timeline-header">
+    <h3>News Assistant</h3>
+    <p>September 2016 - April 2017</p>
+  </div>
+
+  <div class="timeline-content">
+    <h4>The Wall Street Journal, Beijing</h4>
+    <p>	Assisted a China-economy editor to contact sources, conduct interviews, and translate stories.
+ </p>
+  </div>
+
+</div>
+
+
+
+</div> <!-- /timeline-block -->
+
+</div> <!-- /timeline-wrap -->
+
+</div> <!-- /col-twelve -->
+
+</div> <!-- /resume-timeline -->
+
+<div class="row resume-timeline">
+
+	<div class="col-twelve resume-header">
+
+		<h2>Education</h2>
+
+	</div> <!-- /resume-header -->
+
+	<div class="col-twelve">
+
+		<div class="timeline-wrap">
+
+			<div class="timeline-block">
+
+				<div class="timeline-ico">
+					<i class="fa fa-graduation-cap"></i>
+				</div>
+
+				<div class="timeline-header">
+          <h3>Master's degree</h3>
+          <p>June 2017 - June 2018</p>
+        </div>
+
+        <div class="timeline-content">
+          <h4>Northwestern University, Medill School</h4>
+          <p>Xinyi(Ethel) Jiang holds a master's degree in journalism. </p>
+        </div>
+
+      </div> <!-- /timeline-block -->
+
+      <div class="timeline-block">
+
+        <div class="timeline-ico">
+         <i class="fa fa-graduation-cap"></i>
+       </div>
+
+       <div class="timeline-header">
+        <h3>Bachelor degree</h3>
+        <p>September 2013 - June 2017</p>
+      </div>
+
+      <div class="timeline-content">
+        <h4>Renmin University of China</h4>
+        <p>Xinyi (Ethel) Jiang holds a bachelor's degree in Arts & Law </p>
+      </div>
+
+    </div> <!-- /timeline-block -->
+
+    <div class="timeline-block">
+
+      <div class="timeline-ico">
+       <i class="fa fa-graduation-cap"></i>
+     </div>
+
+     <div class="timeline-header">
+      <h3>Exchange student</h3>
+      <p>January 2015 - May 2015</p>
+    </div>
+
+    <div class="timeline-content">
+      <h4>University College Dublin</h4>
+      <p>Xinyi (Ethel) Jiang studied international politics as an exchange student.</p>
+    </div>
+
+  </div> <!-- /timeline-block -->
+
+</div> <!-- /timeline-wrap -->
+
+</div> <!-- /col-twelve -->
+
+</div> <!-- /resume-timeline -->
+
+</section> <!-- /features -->
+
+
+<!-- Portfolio Section
+  ================================================== -->
+  <section id="portfolio">
+
+   <div class="row section-intro">
+     <div class="col-twelve">
+
+      <h5>Portfolio</h5>
+      <h1>Check Out Some of My Works.</h1>
+
+      <p class="lead">Xinyi (Ethel) Jiang is a business reporter and video storyteller.</p>
+
+    </div>
+  </div> <!-- /section-intro-->
+
+  <div class="row portfolio-content">
+
+   <div class="col-twelve">
+
+    <!-- portfolio-wrapper -->
+    <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+     <div class="bgrid folio-item">
+      <div class="item-wrap">
+        <img src="https://ei.marketwatch.com/Multimedia/2018/04/27/Photos/MG/MW-GI155_canada_20180427141210_MG.jpg?uuid=81016462-4a46-11e8-a340-ac162d7bc1f7" alt="U.S. & Canada  Trade">
+        <a href="https://www.marketwatch.com/story/canada-fully-confident-it-will-get-permanent-exemptions-from-aluminum-steel-tariffs-2018-04-27" target="_blank" class="overlay">
+          <div class="folio-item-table">
+            <div class="folio-item-cell">
+             <h3 class="folio-title">U.S. & Canada Trade</h3>
+             <span class="folio-types">
+              MarketWatch
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div> <!-- /folio-item -->
+  <div class="bgrid folio-item">
+    <div class="item-wrap">
+      <img src="https://ei.marketwatch.com/Multimedia/2018/05/23/Photos/MG/MW-GJ765_sasse_20180523150449_MG.jpg?uuid=2a7b9b78-5ebc-11e8-ab2b-ac162d7bc1f7" alt="Tariffs">
+      <a href="https://www.marketwatch.com/story/republican-attacks-trump-tariffs-as-democrat-defends-them-2018-05-23" target="_blank" class="overlay">
+        <div class="folio-item-table">
+          <div class="folio-item-cell">
+           <h3 class="folio-title">Tariffs</h3>
+           <span class="folio-types">
+            MarketWatch
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div> <!-- /folio-item -->
+  <div class="bgrid folio-item">
+    <div class="item-wrap">
+      <img src="https://ei.marketwatch.com/Multimedia/2017/02/22/Photos/MG/MW-FG393_macron_20170222173524_MG.jpg?uuid=33f2e20c-f94f-11e6-bfdc-001cc448aede" alt="U.S. & France relations">
+      <a href="https://www.marketwatch.com/story/macron-is-a-disrupter-just-like-trump-ambassador-says-2018-04-12" target="_blank" class="overlay">
+        <div class="folio-item-table">
+          <div class="folio-item-cell">
+           <h3 class="folio-title">U.S. & France relations</h3>
+           <span class="folio-types">
+            MarketWatch
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div> <!-- /folio-item -->
+      
+      <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="https://morningconsult.com/wp-content/uploads/2018/05/GettyImages-892859738.jpg"alt="Telecommunication">
+    <a href="https://morningconsult.com/2018/05/23/some-voters-who-support-net-neutrality-arent-necessarily-opposed-rule-repeal/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Telecommunication</h3>
+         <span class="folio-types">
+          Morning Consult
+        </span>
+      </div>
+    </div>
+  </a>
+</div>
+</div> <!-- /folio-item -->
+
+<div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="https://morningconsult.com/wp-content/uploads/2018/05/GettyImages-930202864.jpg"alt="Steel Tariffs">
+    <a href="https://morningconsult.com/2018/05/02/tariffs-unlikely-big-impact-consumers-steel-producer-group-says/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Steel Tariffs</h3>
+         <span class="folio-types">
+          Morning Consult
+        </span>
+      </div>
+    </div>
+  </a>
+</div>
+</div> <!-- /folio-item -->
+      
+      <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="https://morningconsult.com/wp-content/uploads/2014/11/shutterstock_20059891-e1509472413523.jpg"alt="Tax Policy">
+    <a href="https://morningconsult.com/2018/04/17/while-republicans-celebrate-tax-cuts-today-others-march-repeal-them/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title"> Tax Policy</h3>
+         <span class="folio-types">
+          Morning Consult
+        </span>
+      </div>
+    </div>
+  </a>
+</div>
+</div> <!-- /folio-item -->
+      
+<div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="https://morningconsult.com/wp-content/uploads/2015/11/iStock_000020322653_Large.jpg"alt="Wireless Technology">
+    <a href="https://morningconsult.com/2018/04/11/u-s-china-competition-5g-likely-increase-even-without-trade-war/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Wireless Technology</h3>
+         <span class="folio-types">
+          Morning Consult
+        </span>
+      </div>
+    </div>
+  </a>
+</div>
+</div> 
+
+           
+<div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="https://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/234b75c2-53af-11e8-996b-4f14aa3e49cc_600x400.png" alt="Facebook & Dating">
+    <a href="https://www.thestreet.com/lifestyle/matchmakers-vow-facebook-won-t-break-up-their-relationship-with-couples-14587361" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Facebook & Dating</h3>
+         <span class="folio-types">
+           The Street
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+      
+      <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="https://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/0bc28542-578e-11e8-996b-47d8e7d0b724_600x400.png" alt="Footware Retail">
+    <a href="https://www.thestreet.com/lifestyle/worn-out-shoe-sellers-still-have-chance-to-heal-14602166" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Footware Retail</h3>
+         <span class="folio-types">
+           The Street
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item --> 
+      
+<div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="https://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/1968c258-26fc-11e8-b6c5-cf8a349a7a8b_600x400.png" alt="U.S. & China Relations">
+    <a href="https://www.thestreet.com/politics/us-businesses-call-for-radical-idea-to-rebalance-china-trade-relations-14553066" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">U.S. & China Relations</h3>
+         <span class="folio-types">
+           The Street
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+      
+      <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="https://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/9ffda72f-38ca-11e8-903c-a1f7905ae68b_600x400.png" alt="U.S. & China Trade">
+    <a href="https://www.thestreet.com/story/14547209/1/trump-tariffs-wont-stop-trade-deficit-from-growing.html" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">U.S. & China Trade</h3>
+         <span class="folio-types">
+           The Street
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+      
+         <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="http://news.medill.northwestern.edu/chicago/wp-content/uploads/sites/3/2018/02/feature-story04-1038x576.jpg" alt="Social Justice">
+    <a href="http://news.medill.northwestern.edu/chicago/for-families-transitioning-from-a-shelter-to-a-new-home-a-design-surprise/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Social Justice</h3>
+         <span class="folio-types">
+           Medill Reports
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+      
+         <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="http://news.medill.northwestern.edu/chicago/wp-content/uploads/sites/3/2018/02/feature-pic5.png" alt="Vending Machines in Japan">
+    <a href="http://news.medill.northwestern.edu/chicago/vending-machines-fill-in-for-a-labor-shortage-in-japan/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Vending Machines in Japan</h3>
+         <span class="folio-types">
+           Medill Reports
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+      
+         <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="http://news.medill.northwestern.edu/chicago/wp-content/uploads/sites/3/2018/03/Feature-pic07-1038x576.jpg" alt="Small Business">
+    <a href="http://news.medill.northwestern.edu/chicago/physical-therapist-applies-human-techniques-to-help-mans-best-friend/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Small Business</h3>
+         <span class="folio-types">
+           Medill Reports
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+      
+               <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="http://news.medill.northwestern.edu/chicago/wp-content/uploads/sites/3/2017/11/digital-1038x576.jpg" alt="Veteran-Owned Business">
+    <a href="http://news.medill.northwestern.edu/chicago/former-marine-uses-lessons-he-learned-in-the-military-to-thrive-in-the-business-world/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Veteran-Owned Business</h3>
+         <span class="folio-types">
+           Medill Reports
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+      
+               <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="http://news.medill.northwestern.edu/chicago/wp-content/uploads/sites/3/2017/11/image1-1038x576.jpg" alt="Local Business">
+    <a href="http://news.medill.northwestern.edu/chicago/b-sides-coffee-and-tea-spins-tunes-and-brews-coffee-for-the-south-side/" target="_blank" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Local Business</h3>
+         <span class="folio-types">
+           Medill Reports
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+
+<!-- <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+    <a href="#modal-05" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Lighthouse</h3>
+         <span class="folio-types">
+           Web Development
+         </span>
+       </div>
+     </div>
+   </a>
+ </div>
+</div> <!-- /folio-item -->
+
+<!-- <div class="bgrid folio-item">
+  <div class="item-wrap">
+    <img src="images/portfolio/salad.jpg" alt="Salad">
+    <a href="#modal-06" class="overlay">
+      <div class="folio-item-table">
+        <div class="folio-item-cell">
+         <h3 class="folio-title">Salad</h3>
+         <span class="folio-types">
+           Branding
+         </span>
+       </div>
+     </div>
+   </a>
+ </div> 
+</div> <!-- /folio-item --> 
+
+
+</div> <!-- /portfolio-wrapper -->
+
+</div>  <!-- /twelve -->
+
+</div> <!-- /portfolio-content -->
+
+</section> <!-- /portfolio -->
+
+
+<!-- footer
+  ================================================== -->
+
+  <footer>
+   <div class="row">
+
+    <div class="col-six tab-full pull-right social">
+
+     <ul class="footer-social">
+       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+       <li><a href="#"><i class="fa fa-behance"></i></a></li>
+       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+       <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+     </ul>
+
+   </div>
+
+<!--    <div class="col-six tab-full">
+    <div class="copyright">
+      <span>Copyright</span>
+    </div>
+  </div> -->
+
+  <div id="go-top">
+    <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+  </div>
+
+</div> <!-- /row -->
+</footer>
+
+<div id="preloader">
+	<div id="loader"></div>
+</div>
+
+<!-- Java Script
+  ================================================== -->
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
 
